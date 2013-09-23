@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+    body{
+      font-family: 'Roboto', sans-serif;
+    }
+
+    section{
+      float: left;
+      padding: 0 15px 0 15px; 
+      width: 10%;
+    }
+    section.heading{
+      width: 100%;
+    }
+
+    li{
+      list-style-type: none;
+      margin: 0 5px 0 5px;
+    }
+    li .description{
+      display: none;
+    }
+    li .topic{
+      
+    }    
+    ul{
+      padding: 0px;
+    }
+
+    li.selected{
+      
+      font-weight: bold;
+      border-bottom: 2px solid;
+      color: green;
+    }
+    #heading .topic{
+      text-align:center;
+      font-size: 5em;
+    }
+    #heading .description{
+      text-align:center;
+      font-size: 2em;
+    }
+
+    </style>
+  </head>
+  <body>
+
+   <section>
+      <h3>Arkitektur</h3>
+      <ul>
+        <li><div class="topic Arkitektur">Stack</div><div class='description'>Microsoft/Java/Ruby/Node whatever? Støpe mur eller er det tre</div></li>
+        <li><div class="topic Arkitektur">Cloud</div><div class='description'>Lei det! Enten Software, en platform, eller infrastruktur</div></li>
+        <li><div class="topic Arkitektur">Hosted</div><div class='description'>Send det til Evry</div></li>
+        <li><div class="topic Arkitektur">Lokal hosting</div><div class='description'>Kjør det i kjelleren</div></li>
+        <li><div class="topic Arkitektur">Web/App/hybrid</div><div class='description'>Fantastisk på en platform eller bra over alt (eller litt av begge?)</div></li>
+        <li><div class="topic Arkitektur">Arkitektur</div><div class='description'></div></li>
+        <li><div class="topic Arkitektur">Integrasjon</div><div class='description'>Når systemet ditt skal snakke med et annet</div></li>
+        <li><div class="topic Arkitektur">Skreddersøm/off-the-shelf</div><div class='description'>Kjøpe standard vs lage sjæl</div></li>
+        <li><div class="topic Arkitektur">Tjenesteorientering</div><div class='description'>Ikke lag en side. Lag tjenester og lim de sammen.</div></li>        
+      </ul>
+    </section>
+    <section>
+      <h3>Basics</h3>
+      <ul>
+        <li><div class="topic Basics">Server</div><div class='description'>Innafor luka</div></li>
+        <li><div class="topic Basics">Klient</div><div class='description'>Utafor luka</div></li>
+        <li><div class="topic Basics">Frontend</div><div class='description'>Presentasjonen - på gata</div></li>
+        <li><div class="topic Basics">Backend</div><div class='description'>Der dataene bor - på kjøkkenet</div></li>
+        <li><div class="topic Basics">Fagsystem</div><div class='description'>Laget for et helt spesifikt domene</div></li>
+        <li><div class="topic Basics">CMS</div><div class='description'>Content management system</div></li>
+        <li><div class="topic Basics">Cookies</div><div class='description'>Kølapp. Noe klienten holder på fordi servern gav det til han</div></li>
+        <li><div class="topic Basics">Internett</div><div class='description'>"The Information superhighway"</div></li>
+        <li><div class="topic Basics">Autentisering</div><div class='description'>Hvem er du? Har du lov til dette?</div></li>
+        <li><div class="topic Basics">Sikkerhet</div><div class='description'>At vi har kontroll på dataene våre</div></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Kjøring</h3>
+      <ul>
+        <li><div class="topic Kjøring">Deploy</div><div class='description'></div></li>
+        <li><div class="topic Kjøring">Release</div><div class='description'></div></li>
+        <li><div class="topic Kjøring">Kontinuerlig deploy</div><div class='description'></div></li>        
+        <li><div class="topic Kjøring">Devops</div><div class='description'>Drift som en del av utviklingen</div></li>
+        <li><div class="topic Kjøring">Forvaltning</div><div class='description'>Når et system som bare skal vedlikeholdes</div></li>
+        <li><div class="topic Kjøring">Drift</div><div class='description'>De som kjører programmet vi har laget</div></li>
+        <li><div class="topic Kjøring">Ekstern vs intern drift</div><div class='description'>Evry vs BEKK helpdesk</div></li>
+        <li><div class="topic Kjøring">Prod/QA/Test</div><div class='description'></div></li>        
+      </ul>
+    </section>
+    <section>
+      <h3>Prosjekt</h3>
+      <ul>        
+        <li><div class="topic Prosess">Kravspekk</div><div class='description'>Et dokument som skal inneholde sannheten</div></li>
+        <li><div class="topic Prosess">Estimat</div><div class='description'>Vill gjetting</div></li>
+        <li><div class="topic Prosess">Kompleksitet (i estimering)</div><div class='description'>Hvor m</div></li>
+        <li><div class="topic Prosess">Systemmålbilde</div><div class='description'></div></li>
+        <li><div class="topic Prosess">Systemarkitekt</div><div class='description'></div></li>
+        <li><div class="topic Prosess">Virksomhetsarkitekt</div><div class='description'></div></li>
+        <li><div class="topic Prosess">Tjenestearkitekt</div><div class='description'></div></li>
+        <li><div class="topic Prosess">Scrum</div><div class='description'></div></li>
+        <li><div class="topic Prosess">Kanban</div><div class='description'></div></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Kvalitet</h3>
+      <ul>        
+        <li><div class="topic Kvalitet">Akseptansetest</div><div class='description'></div></li>
+        <li><div class="topic Kvalitet">Systemtest</div><div class='description'></div></li>
+        <li><div class="topic Kvalitet">Integrasjonstest</div><div class='description'></div></li>
+        <li><div class="topic Kvalitet">Regresjonstest</div><div class='description'></div></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Utvikling</h3>
+      <ul>            
+        <li><div class="topic Utvikling">Kode</div><div class='description'></div></li>   
+        <li><div class="topic Utvikling">Bibliotek</div><div class='description'></div></li>
+        <li><div class="topic Utvikling">Rammeverk</div><div class='description'></div></li>
+        <li><div class="topic Utvikling">API</div><div class='description'></div></li>
+        <li><div class="topic Utvikling">Git og Github</div><div class='description'>Lagring og samarbeid om tekst</div></li>
+        <li><div class="topic Utvikling">Javascript</div><div class='description'>java to javascript is like car to carpet</div></li>
+        <li><div class="topic Utvikling">Html</div><div class='description'></div></li>
+        <li><div class="topic Utvikling">Css</div><div class='description'></div></li>
+      </ul>
+    </section>
+    <section>
+      <h3>BONUS</h3>
+      <ul>            
+        <li><div class="topic BONUS">Spring</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
+        <li><div class="topic BONUS">Autowired</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
+        <li><div class="topic BONUS">instansvariabel</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
+        <li><div class="topic BONUS">sessionscopet</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
+        <li><div class="topic BONUS">bønne</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
+      </ul>
+    </section>
+
+   <section class="heading">
+    <div id="heading"></div>
+   </section>
+
+    <script type="text/javascript">
+        
+      $(document).ready(function() {
+        $('li').click(function(){
+          if($(this).hasClass('selected')){
+            $('h1').html("");  
+          }
+
+          $('.selected').toggleClass('selected');
+          $(this).toggleClass('selected');
+          $('#heading').hide()
+                      .html($(this).html())
+                      .fadeIn("slow");  
+
+        });
+      });
+
+    </script>  
+  </body>
+</html>

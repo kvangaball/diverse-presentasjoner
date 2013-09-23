@@ -1,0 +1,1068 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!-- saved from url=(0049)https://www.gjensidige.no/forhandler/mobile#/form -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta http-equiv="cache-control" content="no-cache">
+      <meta http-equiv="expires" content="Mon, 22 Jul 2002 11:12:01 GMT">
+      <title>GjensidigePluss+</title><style type="text/css">
+            /*
+            * Legal Disclaimer
+            *
+            * These Fonts are licensed only for use on these domains and their subdomains:
+            * gjensidige.no
+            * gjensidige.com
+            * gjensidige.se
+            * gjensidige.dk
+            * gjensidigestiftelsen.no
+            * gjensidige.lv
+            * gjensidige.lt
+            * gjensidige.ee
+            * sikkerhetsbutikken.no
+            * gjensidige-sikkerhedsbutikken.dk
+            * mistralnett.com
+            *
+            * It is illegal to download or use them on other websites.
+            *
+            * While the @font-face statements below may be modified by the client, this
+            * disclaimer may not be removed.
+            *
+            * Lineto.com, 2012
+            */
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            @font-face {
+            font-family: "BrownProRegular";
+            src: url('/_fonts/lineto-gjen-brown-regular.eot');
+            src: url('/_fonts/lineto-gjen-brown-regular.eot?#iefix') format('embedded-opentype'),
+            url('/_fonts/lineto-gjen-brown-regular.woff') format('woff'),
+            url('/_fonts/lineto-gjen-brown-regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            }
+
+            @font-face {
+            font-family: "BrownProBold";
+            src: url('/_fonts/lineto-gjen-brown-bold.eot');
+            src: url('/_fonts/lineto-gjen-brown-bold.eot?#iefix') format('embedded-opentype'),
+            url('/_fonts/lineto-gjen-brown-bold.woff') format('woff'),
+            url('/_fonts/lineto-gjen-brown-bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            }
+
+        </style><link rel="shortcut icon" href="https://www.gjensidige.no/forhandler/_public/gjensidigewww/gfx/favicon.ico" type="image/png">
+      <link rel="apple-touch-icon-precomposed" href="https://www.gjensidige.no/forhandler/_public/gjensidigePluss/assets/gfx/touch-icons/apple-touch-icon-57x57-precomposed.png?_ts=13f2ed3ae2c">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.gjensidige.no/forhandler/_public/gjensidigePluss/assets/gfx/touch-icons/apple-touch-icon-72x72-precomposed.png?_ts=13f2ed3b81c">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.gjensidige.no/forhandler/_public/gjensidigePluss/assets/gfx/touch-icons/apple-touch-icon-114x114-precomposed.png?_ts=13f2ed39be1">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.gjensidige.no/forhandler/_public/gjensidigePluss/assets/gfx/touch-icons/apple-touch-icon-144x144-precomposed.png?_ts=13f2ed3a4e8">
+      <link rel="apple-touch-icon-precomposed" sizes="512x512" href="https://www.gjensidige.no/forhandler/_public/gjensidigePluss/assets/gfx/touch-icons/apple-touch-icon-512x512-precomposed.png?_ts=13f2ed3ae16">
+      <link rel="stylesheet" type="text/css" href="./GjensidigePluss+_files/jquery-ui-1.10.1.custom.css">
+      <link rel="stylesheet" type="text/css" href="./GjensidigePluss+_files/angular-ui.min.css">
+      <link rel="stylesheet/less" type="text/css" href="./GjensidigePluss+_files/main.less"><style type="text/css" id="less:forhandler-_public-gjensidigePluss-source-mobile-styles-main:less-_ts-13f2ed976c4">@import "https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../../lib/normalize/normalize.css";
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* 
+
+  Grid.less
+  ------------------------
+
+  Styling functions for grid layout. All values is based on columnwidths
+  - Size parameters are in columns
+  - @adjust is used when total width is not 100% - eg. if total gridwidth 
+    equals 14 columns and there is 25 columns in total; @adjust = 25/14.
+
+*/
+/*
+
+
+@media screen and (max-width: @breakpoint-small-to) {
+  
+  .page-grid-row {
+    width: 100%;
+    overflow: hidden;
+    min-width: 0;
+    max-width: auto;
+  }
+  
+  .grid-cell {
+    margin-bottom: 3 * @blockSize;
+  }
+
+}
+
+
+@media screen and (max-width: @breakpoint-mobile) {
+
+  .grid-cell {
+    margin-bottom: 1.3 * @blockSize;
+  }
+}
+*/.page-grid-row {
+  position: relative;
+}
+.page-grid-row .grid-cell {
+  position: relative;
+  z-index: 2;
+}
+.mainArticle {
+  position: relative;
+  z-index: 2;
+}
+.dummyCols {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+  z-index: 0;
+  background: rgba(0, 0, 255, 0.05);
+  font-size: 10px;
+  opacity: 0.4;
+}
+.dummyCols .dummyCol {
+  border-left: 1px dotted #000;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0.2em 0;
+  float: left;
+  display: block;
+  width: 4%;
+  height: 100%;
+}
+.dummyCols .dummyCol:last-child {
+  border-right: 1px dotted #000;
+}
+/*
+ * Legal Disclaimer
+ *
+ * These Fonts are licensed only for use on these domains and their subdomains:
+ * gjensidige.no
+ * gjensidige.com
+ * gjensidige.se
+ * gjensidige.dk
+ * gjensidigestiftelsen.no
+ * gjensidige.lv
+ * gjensidige.lt
+ * gjensidige.ee
+ * sikkerhetsbutikken.no
+ * gjensidige-sikkerhedsbutikken.dk
+ * mistralnett.com
+ *
+ * It is illegal to download or use them on other websites.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2012
+ */
+@font-face {
+  font-family: 'GjensidigeBrownRegular';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regular.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regular.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regular.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regular.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regular.svg#GjensidigeBrownRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownRegularAlternate';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regularalt.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regularalt.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regularalt.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regularalt.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-regularalt.svg#GjensidigeBrownRegularAlternate') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownBold';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bold.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bold.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bold.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bold.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bold.svg#GjensidigeBrownBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownBoldAlternate';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-boldalt.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-boldalt.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-boldalt.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-boldalt.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-boldalt.svg#GjensidigeBrownBoldAlternate') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownItalic';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italic.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italic.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italic.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italic.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italic.svg#GjensidigeBrownitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownItalicAlternate';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italicalt.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italicalt.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italicalt.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italicalt.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-italicalt.svg#GjensidigeBrownItalicAlternate') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownBoldItalic';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalic.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalic.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalic.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalic.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalic.svg#GjensidigeBrownBoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownBoldItalicAlternate';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalicalt.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalicalt.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalicalt.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalicalt.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-bolditalicalt.svg#GjensidigeBrownBoldItalicAlternate') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownLightRegular';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-light.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-light.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-light.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-light.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-light.svg#GjensidigeBrownLightRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownLightItalic';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-lightitalic.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-lightitalic.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-lightitalic.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-lightitalic.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-lightitalic.svg#GjensidigeBrownLightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownThin';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thin.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thin.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thin.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thin.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thin.svg#GjensidigeBrownThin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GjensidigeBrownThinItalic';
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thinitalic.eot');
+  src: url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thinitalic.eot?#iefix') format('embedded-opentype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thinitalic.woff') format('woff'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thinitalic.ttf') format('truetype'), url('https://www.gjensidige.no/forhandler/_public/gjensidigePluss/source/mobile/styles/../../assets/fonts/gjensidige_brown/css/fonts/lineto-gjen-brown-thinitalic.svg#GjensidigeBrownThinItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "BrownProRegular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #1f2127;
+}
+strong {
+  font-weight: normal;
+  font-family: "BrownProBold", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "BrownProBold", Helvetica, Arial, sans-serif;
+  margin: 0 0 1em 0;
+  padding: 0;
+  font-weight: normal;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.2em;
+}
+p {
+  margin: 0 0 1em 0;
+}
+a {
+  text-decoration: none;
+  color: #1f2127;
+}
+a:hover,
+a:active {
+  color: #1f2127;
+  text-decoration: underline;
+}
+p a {
+  text-decoration: underline;
+  color: #1f2127;
+}
+p a:hover,
+p a:active {
+  color: #1f2127;
+  text-decoration: none;
+}
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  z-index: 200;
+  -webkit-transform: translate(0, 0, 0);
+  -moz-transform: translate(0, 0, 0);
+  -ms-transform: translate(0, 0, 0);
+  -o-transform: translate(0, 0, 0);
+  transform: translate(0, 0, 0);
+}
+.navbar {
+  position: relative;
+  z-index: 199;
+  background: #fffffa;
+  height: 44px;
+  width: 100%;
+}
+.navbar .title {
+  font-family: "BrownProBold", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 8px;
+  font-size: 18px;
+}
+.navbar .logo {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.navbar .menu-toggler {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background: transparent url('/forhandler/_public/gjensidigePluss/assets/gfx/menu-trigger.svg') no-repeat 50% 50%;
+  opacity: .7;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -ms-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+.navbar .menu-toggler:hover {
+  opacity: 1;
+}
+.navbar-menu {
+  z-index: 9;
+  background: #fffffa;
+  font-size: .8em;
+  color: #909090;
+  width: 100%;
+  position: absolute;
+  top: -200px;
+  padding: 12px 24px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.navbar-menu.active {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 1;
+  top: 44px;
+}
+.navbar-menu .name {
+  font-size: 1.2em;
+  display: block;
+  color: #1f2127;
+}
+.navbar-menu button {
+  padding: .5em 1em .6em 1em;
+  position: absolute;
+  right: 12px;
+  font-size: 1.2em;
+  margin: 12px 0;
+  width: auto;
+  color: #1f2127;
+  top: 6px;
+}
+.page-spinner {
+  position: fixed;
+  top: 44px;
+  bottom: 0;
+  width: 100%;
+  z-index: 200;
+}
+button {
+  font-family: "BrownProRegular", Helvetica, Arial, sans-serif;
+  padding: 0.75em 24px 0.8em 24px;
+  text-align: center;
+  -webkit-transition: border 0.2s linear;
+  -moz-transition: border 0.2s linear;
+  -ms-transition: border 0.2s linear;
+  -o-transition: border 0.2s linear;
+  transition: border 0.2s linear;
+}
+button.primary {
+  width: 100%;
+  background: #fff;
+  border: 5px solid #e0dfdd;
+}
+button.primary:hover {
+  border-color: #cac8c5;
+}
+button.inline {
+  background: #fff;
+  border: 5px solid #e0dfdd;
+}
+button.inline:hover {
+  border-color: #cac8c5;
+}
+select,
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  font-size: 16px;
+  color: #fff;
+  background: #363941;
+}
+select:focus,
+input:focus,
+textarea:focus {
+  background: #565d64;
+}
+input[type=checkbox],
+input[type=radio] {
+  -webkit-appearance: default;
+  -moz-appearance: default;
+  appearance: default;
+}
+textarea {
+  font-family: "BrownProRegular", Helvetica, Arial, sans-serif;
+  font-size: .9em;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid white;
+  min-height: 10em;
+}
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email] {
+  width: 100%;
+  padding: 0.4em 0.2em 0.2em 0.2em;
+  border-bottom: 1px solid white;
+}
+input[type=text].error,
+input[type=number].error,
+input[type=tel].error,
+input[type=email].error,
+input[type=text].ng-invalid,
+input[type=number].ng-invalid,
+input[type=tel].ng-invalid,
+input[type=email].ng-invalid {
+  border-bottom: 1px solid #ee5b46;
+}
+input.currency,
+input.number {
+  text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+
+}
+select.custom-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent url('/forhandler/_public/gjensidigePluss/assets/gfx/G24-dropdown-test.png') no-repeat 50% 50%;
+  background-position: 100% 50%;
+  background-size: 25px;
+  background-color: #565d64;
+  border-bottom: 2px solid white;
+  height: 2.5em;
+  color: white;
+  padding: 0 1em;
+}
+select.custom-input[disabled] {
+  opacity: .6;
+  background-image: none;
+}
+select.custom-input.regcar {
+  opacity: 1;
+}
+select.form-input {
+  border-bottom: 1px solid #fff;
+}
+.control-group {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-bottom: 24px;
+  position: relative;
+}
+.control-group .control-label {
+  width: 60%;
+  float: left;
+  padding-top: .8em;
+  font-size: .9em;
+}
+.control-group .controls {
+  text-align: right;
+  width: 40%;
+  float: left;
+}
+.control-group.no-label .controls {
+  width: 100%;
+}
+.control-group.vertical {
+  margin: 0 0 6px 0;
+}
+.control-group.vertical .control-label {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin-bottom: 0.2em;
+}
+.control-group.vertical .controls {
+  width: 100%;
+  float: none;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.control-group .error {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 0.5em 0;
+  font-size: .6em;
+}
+.control-group.slider-control .error {
+  top: 10px;
+}
+label.error {
+  font-size: 14px;
+  padding: 0.3em 1em 0.5em 1em;
+  display: block;
+  background: #ed5e41;
+  color: white;
+  clear: left;
+  z-index: 2;
+  position: relative;
+}
+label.error:after {
+  content: "";
+  border: solid 6px transparent;
+  /* set all borders to 10 pixels width */
+
+  border-bottom-color: #ed5e41;
+  /* the callout */
+
+  border-top: 0;
+  /* we do not need the bottom border in this case */
+
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: -5px;
+  /* border-width of the :after element + padding of the root element */
+
+  margin: auto;
+}
+label.error.above:after {
+  border: solid 6px transparent;
+  /* set all borders to 10 pixels width */
+
+  border-top-color: #ed5e41;
+  /* the callout */
+
+  border-bottom: 0;
+  top: auto;
+  bottom: -6px;
+}
+label.error.left:after {
+  right: auto;
+  left: 12px;
+}
+label.error .sum {
+  white-space: nowrap;
+}
+span.currency,
+span.number {
+  white-space: nowrap;
+}
+.control-group.slider-control.bonus {
+  margin: 0.5rem 0 1.25rem;
+}
+.control-group.slider-control.currency .slider-value {
+  width: 40%;
+}
+.control-group.slider-control label {
+  clear: left;
+  width: 100%;
+  float: none;
+}
+.control-group.slider-control .controls {
+  width: 100%;
+  float: none;
+}
+.control-group.slider-control .slider {
+  float: left;
+  margin-top: 24px;
+  margin-right: 5%;
+  width: 100%;
+}
+.control-group.slider-control .slider-value {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25%;
+  white-space: no-wrap;
+}
+.control-group.slider-control .slider-value .value {
+  width: 80%;
+  padding: 6px 0 6px 0;
+  margin-top: -6px;
+}
+.control-group.slider-control .slider-value .suffix {
+  color: #707274;
+  width: 20%;
+  display: block;
+  float: left;
+  font-size: 14px;
+  text-align: right;
+  padding-top: 1.5px;
+  padding-right: 1em;
+}
+.control-group.slider-control .slider-value.trailing-suffix .suffix {
+  position: absolute;
+  left: 100%;
+  width: auto;
+  text-align: left;
+  top: 0;
+  padding-left: .1em;
+}
+.ui-slider {
+  border: none;
+  border-radius: 0;
+  height: 10px;
+  background: #000;
+}
+.ui-slider .ui-slider-range {
+  border: none;
+  border-radius: 0;
+  height: 10px;
+  background: #fff;
+}
+.ui-slider .ui-slider-handle {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  width: 30px;
+  height: 30px;
+  border: 5px solid #767676;
+  background: #fff;
+  -webkit-transition: border 0.1s linear;
+  -moz-transition: border 0.1s linear;
+  -ms-transition: border 0.1s linear;
+  -o-transition: border 0.1s linear;
+  transition: border 0.1s linear;
+  top: -10px;
+}
+.ui-slider .ui-slider-handle:hover,
+.ui-slider .ui-slider-handle:focus,
+.ui-slider .ui-slider-handle.ui-state-focus,
+.ui-slider .ui-slider-handle.ui-state-hover {
+  outline: none;
+  background-color: #FFF;
+  border-color: #ffb400;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: #363941;
+  height: 99.9%;
+}
+img {
+  border: none;
+}
+.ng-cloak {
+  visibility: hidden;
+}
+.pageContainer {
+  position: absolute;
+  overflow: visible;
+  padding-top: 44px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.overlays {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.scrollableContainer {
+  overflow: visible;
+  overflow-x: hidden;
+  padding: 0 24px;
+}
+.page-grid-row {
+  *zoom: 1;
+  margin: 0 auto;
+}
+.page-grid-row:before,
+.page-grid-row:after {
+  display: table;
+  content: "";
+}
+.page-grid-row:after {
+  clear: both;
+}
+.grid-cell {
+  margin-bottom: 48px;
+  margin-left: 4%;
+  float: left;
+}
+.pageDisabler {
+  position: absolute;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+}
+.pageDisabler.active {
+  right: 0;
+  opacity: .8;
+}
+.login-page {
+  color: white;
+  margin-top: 44px;
+}
+.login-page .intro {
+  font-size: .9em;
+  line-height: auto;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 24px;
+}
+.login-form {
+  padding: 12px 24px;
+  text-align: center;
+}
+.login-form label {
+  display: block;
+  text-align: left;
+}
+.login-form input[type=text],
+.login-form input[type=password] {
+  width: 100%;
+  font-size: 21px;
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 24px;
+}
+.login-form input[type=text]:focus,
+.login-form input[type=password]:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 12px;
+}
+.login-form input[type=text].error,
+.login-form input[type=password].error {
+  border-bottom: 1px solid #ee5b46;
+}
+.form-page {
+  padding-top: 100px;
+}
+.form-page .monthly {
+  position: fixed;
+  top: 44px;
+  width: 100%;
+  z-index: 20;
+}
+.form-page .form-comment {
+  clear: both;
+  font-size: 0.7em;
+  line-height: 1.3em;
+  opacity: 0.8;
+}
+.form-page .value-comment {
+  font-size: 0.9em;
+  display: block;
+  opacity: 0.6;
+}
+.application-form {
+  color: white;
+  padding: 12px 0;
+}
+.application-form input.currency {
+  width: 75%;
+}
+.monthly {
+  background: #fffffa;
+  color: #1f2127;
+  overflow: hidden;
+}
+.monthly .price {
+  padding: 12px 0 24px 0;
+  width: 50%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.monthly .price.active:after {
+  content: "";
+  border: solid 12px transparent;
+  /* set all borders to 10 pixels width */
+
+  border-bottom-color: #363941;
+  /* the callout */
+
+  border-top: 0;
+  /* we do not need the bottom border in this case */
+
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 48%;
+  bottom: 0;
+  /* border-width of the :after element + padding of the root element */
+
+  margin: auto;
+}
+.monthly .price.disabled {
+  opacity: .4;
+}
+.monthly .value {
+  font-family: "BrownProBold", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  display: block;
+}
+.monthly .desc {
+  display: block;
+  font-size: 0.8em;
+  margin-top: -0.5em;
+  color: #777;
+}
+</style><script type="text/javascript">
+            less = {
+              env: "development"
+            }
+          </script><script type="text/javascript" src="./GjensidigePluss+_files/less.js"></script><script src="./GjensidigePluss+_files/jquery.js" type="text/javascript"></script><style type="text/css">
+            .ng-cloak { visibility: hidden; }
+        </style><script type="text/javascript">
+            var g24config = {
+                urls : {
+                   resourceUrl : '/forhandler/_public/gjensidigePluss/'
+                }
+            };
+        </script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./GjensidigePluss+_files/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/accounting/accounting" src="./GjensidigePluss+_files/accounting.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/angular/angular" src="./GjensidigePluss+_files/angular.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/urlHelper" src="./GjensidigePluss+_files/urlHelper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app/mobileApp" src="./GjensidigePluss+_files/mobileApp.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app/controllers/loginCtrl" src="./GjensidigePluss+_files/loginCtrl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app/controllers/navCtrl" src="./GjensidigePluss+_files/navCtrl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app/services/loginService" src="./GjensidigePluss+_files/loginService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app/services/appStateService" src="./GjensidigePluss+_files/appStateService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/draftService" src="./GjensidigePluss+_files/draftService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/modules/financeCalculator/financeCalculatorModule" src="./GjensidigePluss+_files/financeCalculatorModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app/pages" src="./GjensidigePluss+_files/pages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/commonModule" src="./GjensidigePluss+_files/commonModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Moment" src="./GjensidigePluss+_files/moment.js"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\:form{display:block;}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AngularResource" src="./GjensidigePluss+_files/angular-resource.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AngularUI" src="./GjensidigePluss+_files/angular-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AngularLocale_NO" src="./GjensidigePluss+_files/angular-locale_no.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/modules/financeCalculator/calculatorCtrl" src="./GjensidigePluss+_files/calculatorCtrl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/modules/financeCalculator/loanFormCtrl" src="./GjensidigePluss+_files/loanFormCtrl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/modules/financeCalculator/leasingFormCtrl" src="./GjensidigePluss+_files/leasingFormCtrl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/modules/financeCalculator/draftSaveStatusCtrl" src="./GjensidigePluss+_files/draftSaveStatusCtrl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/modules/financeCalculator/calculationService" src="./GjensidigePluss+_files/calculationService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/applicationService" src="./GjensidigePluss+_files/applicationService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/productsService" src="./GjensidigePluss+_files/productsService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/storageService" src="./GjensidigePluss+_files/storageService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/navigationService" src="./GjensidigePluss+_files/navigationService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/uiSlider" src="./GjensidigePluss+_files/uiSlider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/cookieService" src="./GjensidigePluss+_files/cookieService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/textService" src="./GjensidigePluss+_files/textService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/services/resourceService" src="./GjensidigePluss+_files/resourceService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/decimalInput" src="./GjensidigePluss+_files/decimalInput.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/numberInput" src="./GjensidigePluss+_files/numberInput.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/fodselsnummer" src="./GjensidigePluss+_files/fodselsnummer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/orgnummer" src="./GjensidigePluss+_files/orgnummer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/telefonnummer" src="./GjensidigePluss+_files/telefonnummer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/epost" src="./GjensidigePluss+_files/epost.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/customerid" src="./GjensidigePluss+_files/customerid.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/spinner" src="./GjensidigePluss+_files/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/restrict" src="./GjensidigePluss+_files/restrict.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/onEnter" src="./GjensidigePluss+_files/onEnter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/recieveClass" src="./GjensidigePluss+_files/recieveClass.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/directives/ngBlur" src="./GjensidigePluss+_files/ngBlur.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/filters/textFilter" src="./GjensidigePluss+_files/textFilter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Moment_NO" src="./GjensidigePluss+_files/nb.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/calculation/billaan" src="./GjensidigePluss+_files/billaan.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/calculation/billeasing" src="./GjensidigePluss+_files/billeasing.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="./GjensidigePluss+_files/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jquery-ui/jquery-ui" src="./GjensidigePluss+_files/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/utils/ssnValidator" src="./GjensidigePluss+_files/ssnValidator.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/utils/orgNumberValidator" src="./GjensidigePluss+_files/orgNumberValidator.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/spin/spin.min" src="./GjensidigePluss+_files/spin.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/models/customerType" src="./GjensidigePluss+_files/customerType.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/underscore/underscore" src="./GjensidigePluss+_files/underscore.js"></script><style type="text/css"></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min" src="./GjensidigePluss+_files/jquery.ui.touch-punch.min.js"></script></head>
+   <body class="default desktop">
+      <div class="pageContainer">
+         <div class="page-header ng-scope" ng-controller="navCtrl">
+            <div class="navbar"><a href="" class="home" ng-click="goHome()"><!--[if lte IE 8]>
+                  <img src="/forhandler/_public/gjensidigePluss/assets/gfx/logo-circle.png"
+                       class="portrait logo"
+                       alt="" /><![endif]--><!--[if gt IE 8]>
+                  <img src="/forhandler/_public/gjensidigePluss/assets/gfx/logo-circle.svg?_ts=13f2ed34382"
+                       class="svg logo portrait" /><![endif]--><!--[if !IE]> -->
+                  <img src="./GjensidigePluss+_files/logo-circle.svg" class="svg logo portrait"><!-- <![endif]--></a><h1 class="title ng-binding">Beregn pris</h1><a href="" class="menu-toggler" ng-click="toggleMenu()" ng-show="userService.userIndentified" style="display: none;"></a></div>
+            <div class="navbar-menu" ng-class="menuClass">
+               <p>Innlogget: <span class="name ng-binding">g24</span></p><button class="inline" ng-click="logout()">Logg ut</button></div>
+         </div>
+         <div class="ng-view"><div class="form-page ng-scope"><div class="fixedContainer"><div class="monthly"><div class="price loan active"><span class="value ng-binding">3&nbsp;928</span><span class="desc ng-binding">Lån/mnd.</span></div></div></div><div class="scrollableContainer"><form name="soknad" ng-submit="submit()" class="application-form ng-valid ng-dirty"><div class="loan-form ng-scope" ng-show="showLoanForm()" ng-controller="LoanFormCtrl" style=""><div class="control-groups"><div class="control-group pris"><label class="control-label" for="pris-input">Pris</label><div class="controls"><input type="text" id="pris-input" name="pris" class="currency ng-valid ng-dirty" number-input="true" ng-model="data.pris" pattern="\d*" max="{ LOAN.MAX_PRIS }" min="{ LOAN.MIN_PRIS }" size="6" maxlength="7"></div><label for="pris-input" class="error ng-binding" ng-hide="isValidPris()" style="display: none;">
+            Pris må være mellom 10&nbsp;000,- og 10&nbsp;000&nbsp;000,-
+          </label></div><div class="control-group egenkapital"><label class="control-label" for="egenkapital-input">Egenkapital
+            (<span class="ek-prosent ng-binding">35,0</span>%)
+          </label><div class="controls"><input type="text" id="egenkapital-input" name="egenkapital" class="currency ng-valid ng-dirty" number-input="true" ng-model="data.egenkapital" pattern="\d*" max="getMaxEgenkapital()" min="0" size="5" maxlength="6"></div><label for="egenkapital-input" class="error" ng-hide="isNotTooMuchEgenkapital()" style="display: none;">
+            For høy egenkapital. <span ng-show="getMaxEgenkapital() &gt; 0" style="">Maks: <span class="currency ng-binding">290&nbsp;000</span></span></label></div><div class="control-group slider-control"><label class="control-label" for="loan-nedbetalingstid_lan-input">Nedbetalingstid</label><div class="controls"><div id="nedbetalingstid_lan-input-slider" class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ng-isolate-scope ng-scope" data-value="data.nedbetalingstid_lan" data-max="120" data-min="12" data-step="1" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="https://www.gjensidige.no/forhandler/mobile#" style="left: 44.44444444444444%;"></a></div><label for="loan-nedbetalingstid_lan-input" class="error ng-binding" ng-hide="isValidNedbetalingstid()" style="display: none;">
+              Nedbetalingstid må være mellom 12 mnd og 120 mnd
+            </label><div class="slider-value trailing-suffix"><input type="text" id="loan-nedbetalingstid_lan-input" name="nedbetalingstid_lan" class="value number ng-valid ng-dirty" number-input="true" ng-model="data.nedbetalingstid_lan" pattern="\d*" maxlength="3"></div></div></div><div class="control-group slider-control"><label class="control-label" for="loan-renter-input">Renter</label><div class="controls"><div id="renter-input-slider" class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ng-isolate-scope ng-scope" data-value="data.rente" data-max="7.0" data-min="4.6" data-step="0.1" data-slider-max="10" data-precision="1" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="https://www.gjensidige.no/forhandler/mobile#" style="left: 58.333333333333336%;"></a></div><label for="loan-renter-input" class="error ng-binding" ng-hide="isValidRente()" style="display: none;">
+              Rente må være mellom 4,6% og 7,0%
+            </label><div class="slider-value trailing-suffix"><input type="text" id="loan-renter-input" name="renter" class="value number ng-isolate-scope ng-scope ng-pristine ng-valid" maxlength="4" size="4" decimal-input="2" model-to-update="data.rente" ng-model="tempLaanRente"><span class="suffix">%</span></div></div></div></div></div><div class="leasing-form ng-scope" ng-show="showLeasingForm()" ng-controller="LeasingFormCtrl" style="display: none;"><div class="control-groups"><div class="control-group"><label class="control-label" for="leasing-pris-input">Pris </label><div class="controls"><input type="text" pattern="\d*" id="leasing-pris-input" name="pris" class="currency ng-valid ng-dirty" ng-model="data.pris" number-input="true" size="6" maxlength="7"></div><label for="pris-input" class="error ng-binding" ng-hide="isValidLeasingPris()" style="display: none;">
+        Pris må være mellom 90&nbsp;000,- og 10&nbsp;000&nbsp;000,-
+      </label></div><div class="control-group slider-control"><label class="control-label" for="lopetid_leasing-input">Varighet</label><div class="controls"><div id="lopetid_leasing-input-slider" class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ng-isolate-scope ng-scope" data-value="data.lopetid_leasing" data-max="60" data-min="12" data-step="12" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="https://www.gjensidige.no/forhandler/mobile#" style="left: 50%;"></a></div><label for="lopetid_leasing-input" class="error ng-binding" ng-hide="isValidLeasingMonths()" style="display: none;">
+          Varighet må være mellom 12 og 60 måneder
+        </label><div class="slider-value no-suffix"><input type="text" id="lopetid_leasing-input" name="lopetid_leasing" class="value number ng-pristine ng-valid" ng-model="data.lopetid_leasing" min="{ LEASING.MIN_YEAR }" max="{ LEASING.MAX_YEAR }" pattern="\d*" size="1" maxlength="3"></div></div></div><div class="control-group slider-control currency"><label class="control-label" for="restverdi-input">Restverdi (<span class="currency ng-binding">50,00%</span>)</label><div class="controls"><div id="restverdi-input-slider" class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ng-isolate-scope ng-scope" data-value="restPst" data-max="60" data-min="0" data-step="1" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="https://www.gjensidige.no/forhandler/mobile#" style="left: 83.33333333333334%;"></a></div><label for="restverdi-input" class="error ng-binding" ng-hide="isValidRestverdi()" style="display: none;">
+          Restverdi må være mellom 0% og 60% <span class="sum ng-binding">(0 og 180&nbsp;000)</span></label><div class="slider-value"><input type="text" id="restverdi-input" name="restverdi" class="value currency ng-valid ng-dirty" ng-model="data.restverdi" number-input="true" pattern="\d*" maxlength="6" size="6"></div></div></div><div class="control-group"><label class="control-label" for="forskuddsleie-input">Forskuddsleie (<span class="currency ng-binding">20,00%</span>)</label><div class="controls"><input type="text" id="forskuddsleie-input" name="forskuddsleie" class="value currency ng-valid ng-dirty" ng-model="data.forskuddsleie" number-input="true" pattern="\d*" maxlength="6" size="6"></div><label for="forskuddsleie-input" class="error ng-binding" ng-hide="isValidForskuddsleie()" style="display: none;">
+        Maks forskuddsleie for gitt restverdi er 90&nbsp;000
+      </label></div><div class="control-group slider-control"><label class="control-label" for="renter-input">Renter</label><div class="controls"><div id="renter-input-slider" class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ng-isolate-scope ng-scope" data-value="data.rente" data-max="7.0" data-min="4.6" data-step="0.1" data-slider-max="10" data-precision="1" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="https://www.gjensidige.no/forhandler/mobile#" style="left: 58.333333333333336%;"></a></div><label for="renter-input" class="error ng-binding" ng-hide="isValidLeasingRente()" style="">
+          Rente må være mellom 4,6% og 7,0%
+        </label><div class="slider-value trailing-suffix"><input type="number" id="renter-input" name="renter" class="value number ng-isolate-scope ng-scope ng-pristine ng-valid ng-valid-number" maxlength="4" size="4" decimal-input="2" ng-model="tempLaanRente" model-to-update="data.rente"><span class="suffix">%</span></div></div></div><div class="control-group"><label class="control-label" for="regavgift-input">Reg. avgift</label><div class="controls"><input type="text" pattern="\d*" id="regavgift-input" name="regavgift" class="currency ng-valid ng-dirty" ng-model="data.regavgift" number-input="true" maxlength="7" size="6" minlength="5"></div><label for="regavgift-input" class="error ng-binding" ng-hide="isValidRegavgift()" style="display: none;">
+          Maks regavgift er 300&nbsp;000
+        </label></div></div></div><div class="control-group no-label select finance-selector"><label class="control-label"></label><div class="controls"><select name="product" class="custom-input ng-pristine ng-valid" ng-model="product" ng-options="product as product.title for product in products" ng-disabled="productsDisabled()" disabled="disabled"><option value="0" selected="selected">Lån</option></select></div></div><div ng-controller="DraftSaveStatusCtrl" class="ng-scope"><p class="form-comment ng-binding">Sist lagret: for noen sekunder siden</p></div></form></div></div></div>
+         <div class="pageDisabler" ng-class="{active: pageState.disabled}"></div>
+      </div><script type="text/ng-template" id="/login.html"><div class="page login-page"><p class="intro">
+        For å logge inn, trenger du din <strong>brukerkode</strong> som du finner i Dashboardløsningen.
+			</p><form class="login-form" ng-submit="login()"><div class="control-group vertical"><div class="controls"><input type="text" id="username" name="brukernavn" ng-model="username"
+                            ng-class="inputClass"
+                            required="true"
+                            placeholder="Brukerkode" /><label class="error left" for="brukernavn" ng-show="loginError">{{loginError.text}}</label></div></div><div class="control-group button-row"><button type="button" class="primary" ng-click="login()">Logg inn</button></div></form></div></script><script type="text/ng-template" id="/form.html"><div class="form-page"><div class="fixedContainer"><div class="monthly"><div class="price loan active"><span class="value">{{ product.price | number}}</span><span class="desc">{{ product.title }}/mnd.</span></div></div></div><div class="scrollableContainer"><form name="soknad" ng-submit="submit()" class="application-form"><div class="loan-form" ng-show="showLoanForm()" ng-controller="LoanFormCtrl"><div class="control-groups"><div class="control-group pris"><label class="control-label" for="pris-input">Pris</label><div class="controls"><input type="text" id="pris-input" name="pris" class="currency" number-input="true"
+                                     ng-model="data.pris"
+                                     pattern="\d*"
+                                     max="{ LOAN.MAX_PRIS }"
+                                     min="{ LOAN.MIN_PRIS }"
+                                     size="6"
+                                     maxlength="7" /></div><label for="pris-input" class="error" ng-hide="isValidPris()">
+            Pris må være mellom {{ LOAN.MIN_PRIS | number:0}},- og {{ LOAN.MAX_PRIS | number:0}},-
+          </label></div><div class="control-group egenkapital"><label class="control-label" for="egenkapital-input">Egenkapital
+            (<span class="ek-prosent">{{ calculateEgenkapitalPst() | number:1 }}</span>%)
+          </label><div class="controls"><input type="text" id="egenkapital-input" name="egenkapital" class="currency"
+                                     number-input="true"
+                                     ng-model="data.egenkapital"
+                                     pattern="\d*"
+                                     max="getMaxEgenkapital()"
+                                     min="0"
+                                     size="5"
+                                     maxlength="6" /></div><label for="egenkapital-input" class="error" ng-hide="isNotTooMuchEgenkapital()">
+            For høy egenkapital. <span ng-show="getMaxEgenkapital() &gt; 0">Maks: <span class="currency">{{ getMaxEgenkapital() | number:0}}</span></span></label></div><div class="control-group slider-control"><label class="control-label" for="loan-nedbetalingstid_lan-input">Nedbetalingstid</label><div class="controls"><div id="nedbetalingstid_lan-input-slider"
+                                   class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                   data-value="data.nedbetalingstid_lan"
+                                   data-max="120"
+                                   data-min="12"
+                                   data-step="1"><span></span></div><label for="loan-nedbetalingstid_lan-input" class="error"
+                                     ng-hide="isValidNedbetalingstid()">
+              Nedbetalingstid må være mellom {{ LOAN.MIN_MND }} mnd og {{ LOAN.MAX_MND }} mnd
+            </label><div class="slider-value trailing-suffix"><input type="text" id="loan-nedbetalingstid_lan-input" name="nedbetalingstid_lan"
+                                        class="value number"
+                                        number-input="true"
+                                        ng-model="data.nedbetalingstid_lan"
+                                        pattern="\d*"
+                                        maxlength="3" /></div></div></div><div class="control-group slider-control"><label class="control-label" for="loan-renter-input">Renter</label><div class="controls"><div id="renter-input-slider"
+                                   class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                   data-value="data.rente"
+                                   data-max="7.0"
+                                   data-min="4.6"
+                                   data-step="0.1"
+                                   data-slider-max="10"
+                                   data-precision="1"><span class="hidden"></span></div><label for="loan-renter-input" class="error" ng-hide="isValidRente()">
+              Rente må være mellom {{ LOAN.MIN_RENTE | number:1}}% og {{ LOAN.MAX_RENTE | number:1}}%
+            </label><div class="slider-value trailing-suffix"><input type="text" id="loan-renter-input" name="renter" class="value number"
+                                        maxlength="4"
+                                        size="4"
+                                        decimal-input="2"
+                                        model-to-update="data.rente"
+                                        ng-model="tempLaanRente" /><span class="suffix">%</span></div></div></div></div></div><div class="leasing-form" ng-show="showLeasingForm()"
+                       ng-controller="LeasingFormCtrl"><div class="control-groups"><div class="control-group"><label class="control-label" for="leasing-pris-input">Pris </label><div class="controls"><input type="text" pattern="\d*" id="leasing-pris-input" name="pris" class="currency"
+                                     ng-model="data.pris"
+                                     number-input="true"
+                                     size="6"
+                                     maxlength="7" /></div><label for="pris-input" class="error" ng-hide="isValidLeasingPris()">
+        Pris må være mellom {{ LEASING.MIN_PRIS | number:0}},- og {{ LEASING.MAX_PRIS | number:0}},-
+      </label></div><div class="control-group slider-control"><label class="control-label" for="lopetid_leasing-input">Varighet</label><div class="controls"><div id="lopetid_leasing-input-slider"
+                                   class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                   data-value="data.lopetid_leasing"
+                                   data-max="60"
+                                   data-min="12"
+                                   data-step="12"><span></span></div><label for="lopetid_leasing-input" class="error" ng-hide="isValidLeasingMonths()">
+          Varighet må være mellom {{ LEASING.MIN_MND }} og {{ LEASING.MAX_MND }} måneder
+        </label><div class="slider-value no-suffix"><input type="text" id="lopetid_leasing-input" name="lopetid_leasing"
+                                        class="value number"
+                                        ng-model="data.lopetid_leasing"
+                                        min="{ LEASING.MIN_YEAR }"
+                                        max="{ LEASING.MAX_YEAR }"
+                                        pattern="\d*"
+                                        size="1"
+                                        maxlength="3" /></div></div></div><div class="control-group slider-control currency"><label class="control-label" for="restverdi-input">Restverdi (<span class="currency">{{ restPst | number:2 }}%</span>)</label><div class="controls"><div id="restverdi-input-slider"
+                                   class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                   data-value="restPst"
+                                   data-max="60"
+                                   data-min="0"
+                                   data-step="1"><span></span></div><label for="restverdi-input" class="error" ng-hide="isValidRestverdi()">
+          Restverdi må være mellom {{ LEASING.REST_MIN_PERC * 100 | number:0}}% og {{ LEASING.REST_MAX_PERC * 100 | number:0}}% <span class="sum">({{calculateMinRestverdi()| number:0 }} og {{calculateMaxRestverdi()| number:0 }})</span></label><div class="slider-value"><input type="text" id="restverdi-input" name="restverdi" class="value currency"
+                                        ng-model="data.restverdi"
+                                        number-input="true"
+                                        pattern="\d*"
+                                        maxlength="6"
+                                        size="6" /></div></div></div><div class="control-group"><label class="control-label" for="forskuddsleie-input">Forskuddsleie (<span class="currency">{{ forskuddsleiePst | number:2 }}%</span>)</label><div class="controls"><input type="text" id="forskuddsleie-input" name="forskuddsleie"
+                                     class="value currency"
+                                     ng-model="data.forskuddsleie"
+                                     number-input="true"
+                                     pattern="\d*"
+                                     maxlength="6"
+                                     size="6" /></div><label for="forskuddsleie-input" class="error" ng-hide="isValidForskuddsleie()">
+        Maks forskuddsleie for gitt restverdi er {{ calculateMaxForskuddsleie() | number:0 }}
+      </label></div><div class="control-group slider-control"><label class="control-label" for="renter-input">Renter</label><div class="controls"><div id="renter-input-slider"
+                                   class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                   data-value="data.rente"
+                                   data-max="7.0"
+                                   data-min="4.6"
+                                   data-step="0.1"
+                                   data-slider-max="10"
+                                   data-precision="1"><span></span></div><label for="renter-input" class="error" ng-hide="isValidLeasingRente()">
+          Rente må være mellom {{ LEASING.MIN_RENTE | number:1}}% og {{ LEASING.MAX_RENTE | number:1}}%
+        </label><div class="slider-value trailing-suffix"><input type="number" id="renter-input" name="renter" class="value number"
+                                        maxlength="4"
+                                        size="4"
+                                        decimal-input="2"
+                                        ng-model="tempLaanRente"
+                                        model-to-update="data.rente" /><span class="suffix">%</span></div></div></div><div class="control-group"><label class="control-label" for="regavgift-input">Reg. avgift</label><div class="controls"><input type="text" pattern="\d*" id="regavgift-input" name="regavgift"
+                                     class="currency"
+                                     ng-model="data.regavgift"
+                                     number-input="true"
+                                     maxlength="7"
+                                     size="6"
+                                     minlength="5" /></div><label for="regavgift-input" class="error" ng-hide="isValidRegavgift()">
+          Maks regavgift er {{ calculateMaxRegavgift() | number:0 }}
+        </label></div></div></div><div class="control-group no-label select finance-selector"><label class="control-label"></label><div class="controls"><select name="product" class="custom-input" ng-model="product"
+                                ng-options="product as product.title for product in products"
+                                ng-disabled="productsDisabled()"></select></div></div><div ng-controller="DraftSaveStatusCtrl" class="ng-cloak"><p class="form-comment">{{lagret}}</p></div></form></div></div></script><script type="text/javascript" data-main="/forhandler/_public/gjensidigePluss/source/mobile/scripts/main" src="./GjensidigePluss+_files/require.js"></script>
+</body></html>
