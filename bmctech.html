@@ -9,13 +9,14 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    section{
+    #categories section{
       float: left;
       padding: 0 15px 0 15px; 
       width: 10%;
     }
-    section.heading{
+    section.heading, section.categories{
       width: 100%;
+      display: inline-block;
     }
 
     li{
@@ -33,7 +34,6 @@
     }
 
     li.selected{
-      
       font-weight: bold;
       border-bottom: 2px solid;
       color: green;
@@ -47,102 +47,75 @@
       font-size: 2em;
     }
 
+    #data{
+      display: none;
+    }
+
     </style>
   </head>
   <body>
 
-   <section>
-      <h3>Arkitektur</h3>
-      <ul>
-        <li><div class="topic Arkitektur">Stack</div><div class='description'>Microsoft/Java/Ruby/Node whatever? Støpe mur eller er det tre</div></li>
-        <li><div class="topic Arkitektur">Cloud</div><div class='description'>Lei det! Enten Software, en platform, eller infrastruktur</div></li>
-        <li><div class="topic Arkitektur">Hosted</div><div class='description'>Send det til Evry</div></li>
-        <li><div class="topic Arkitektur">Lokal hosting</div><div class='description'>Kjør det i kjelleren</div></li>
-        <li><div class="topic Arkitektur">Web/App/hybrid</div><div class='description'>Fantastisk på en platform eller bra over alt (eller litt av begge?)</div></li>
-        <li><div class="topic Arkitektur">Arkitektur</div><div class='description'></div></li>
-        <li><div class="topic Arkitektur">Integrasjon</div><div class='description'>Når systemet ditt skal snakke med et annet</div></li>
-        <li><div class="topic Arkitektur">Skreddersøm/off-the-shelf</div><div class='description'>Kjøpe standard vs lage sjæl</div></li>
-        <li><div class="topic Arkitektur">Tjenesteorientering</div><div class='description'>Ikke lag en side. Lag tjenester og lim de sammen.</div></li>        
-      </ul>
-    </section>
-    <section>
-      <h3>Basics</h3>
-      <ul>
-        <li><div class="topic Basics">Server</div><div class='description'>Innafor luka</div></li>
-        <li><div class="topic Basics">Klient</div><div class='description'>Utafor luka</div></li>
-        <li><div class="topic Basics">Frontend</div><div class='description'>Presentasjonen - på gata</div></li>
-        <li><div class="topic Basics">Backend</div><div class='description'>Der dataene bor - på kjøkkenet</div></li>
-        <li><div class="topic Basics">Fagsystem</div><div class='description'>Laget for et helt spesifikt domene</div></li>
-        <li><div class="topic Basics">CMS</div><div class='description'>Content management system</div></li>
-        <li><div class="topic Basics">Cookies</div><div class='description'>Kølapp. Noe klienten holder på fordi servern gav det til han</div></li>
-        <li><div class="topic Basics">Internett</div><div class='description'>"The Information superhighway"</div></li>
-        <li><div class="topic Basics">Autentisering</div><div class='description'>Hvem er du? Har du lov til dette?</div></li>
-        <li><div class="topic Basics">Sikkerhet</div><div class='description'>At vi har kontroll på dataene våre</div></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Kjøring</h3>
-      <ul>
-        <li><div class="topic Kjøring">Deploy</div><div class='description'></div></li>
-        <li><div class="topic Kjøring">Release</div><div class='description'></div></li>
-        <li><div class="topic Kjøring">Kontinuerlig deploy</div><div class='description'></div></li>        
-        <li><div class="topic Kjøring">Devops</div><div class='description'>Drift som en del av utviklingen</div></li>
-        <li><div class="topic Kjøring">Forvaltning</div><div class='description'>Når et system som bare skal vedlikeholdes</div></li>
-        <li><div class="topic Kjøring">Drift</div><div class='description'>De som kjører programmet vi har laget</div></li>
-        <li><div class="topic Kjøring">Ekstern vs intern drift</div><div class='description'>Evry vs BEKK helpdesk</div></li>
-        <li><div class="topic Kjøring">Prod/QA/Test</div><div class='description'></div></li>        
-      </ul>
-    </section>
-    <section>
-      <h3>Prosjekt</h3>
-      <ul>        
-        <li><div class="topic Prosess">Kravspekk</div><div class='description'>Et dokument som skal inneholde sannheten</div></li>
-        <li><div class="topic Prosess">Estimat</div><div class='description'>Vill gjetting</div></li>
-        <li><div class="topic Prosess">Kompleksitet (i estimering)</div><div class='description'>Hvor m</div></li>
-        <li><div class="topic Prosess">Systemmålbilde</div><div class='description'></div></li>
-        <li><div class="topic Prosess">Systemarkitekt</div><div class='description'></div></li>
-        <li><div class="topic Prosess">Virksomhetsarkitekt</div><div class='description'></div></li>
-        <li><div class="topic Prosess">Tjenestearkitekt</div><div class='description'></div></li>
-        <li><div class="topic Prosess">Scrum</div><div class='description'></div></li>
-        <li><div class="topic Prosess">Kanban</div><div class='description'></div></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Kvalitet</h3>
-      <ul>        
-        <li><div class="topic Kvalitet">Akseptansetest</div><div class='description'></div></li>
-        <li><div class="topic Kvalitet">Systemtest</div><div class='description'></div></li>
-        <li><div class="topic Kvalitet">Integrasjonstest</div><div class='description'></div></li>
-        <li><div class="topic Kvalitet">Regresjonstest</div><div class='description'></div></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Utvikling</h3>
-      <ul>            
-        <li><div class="topic Utvikling">Kode</div><div class='description'></div></li>   
-        <li><div class="topic Utvikling">Bibliotek</div><div class='description'></div></li>
-        <li><div class="topic Utvikling">Rammeverk</div><div class='description'></div></li>
-        <li><div class="topic Utvikling">API</div><div class='description'></div></li>
-        <li><div class="topic Utvikling">Git og Github</div><div class='description'>Lagring og samarbeid om tekst</div></li>
-        <li><div class="topic Utvikling">Javascript</div><div class='description'>java to javascript is like car to carpet</div></li>
-        <li><div class="topic Utvikling">Html</div><div class='description'></div></li>
-        <li><div class="topic Utvikling">Css</div><div class='description'></div></li>
-      </ul>
-    </section>
-    <section>
-      <h3>BONUS</h3>
-      <ul>            
-        <li><div class="topic BONUS">Spring</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
-        <li><div class="topic BONUS">Autowired</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
-        <li><div class="topic BONUS">instansvariabel</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
-        <li><div class="topic BONUS">sessionscopet</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
-        <li><div class="topic BONUS">bønne</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
-      </ul>
-    </section>
+   <section id="categories">
+   </section> 
 
    <section class="heading">
     <div id="heading"></div>
    </section>
+
+
+   <div id="data">
+      
+      <ul><li class="Arkitektur"><div class="topic"> Stack (microsoft- eller javastack)</div><div class='description'>Er det mur eller er det tre</div></li>
+<li class="Arkitektur"><div class="topic"> Cloud</div><div class='description'>Software, platform, infrastruktur</div></li>
+<li class="Arkitektur"><div class="topic"> Hosted</div><div class='description'>Send det til Evry</div></li>
+<li class="Arkitektur"><div class="topic"> Lokal hosting</div><div class='description'>Kjør det i kjelleren</div></li>
+<li class="Arkitektur"><div class="topic"> Web vs mobil vs hybrid</div><div class='description'>Funker bare på apple vs funker på internett og en slags mellomting</div></li>
+<li class="Arkitektur"><div class="topic"> Tjenesteorientering (SOA)</div><div class='description'>Tjenester som gjør spesifikke ting</div></li>
+<li class="Arkitektur"><div class="topic"> Arkitektur</div><div class='description'></div></li>
+<li class="Arkitektur"><div class="topic"> Integrasjon</div><div class='description'>Snakke med noen andre</div></li>
+<li class="Arkitektur"><div class="topic"> Skreddersøm vs. off-the-shelf</div><div class='description'>Kjøpe vs lage sjæl</div></li>
+<li class="Basics"><div class="topic"> Server</div><div class='description'>Innafor luka</div></li>
+<li class="Basics"><div class="topic"> Klient</div><div class='description'>Utafor luka</div></li>
+<li class="Basics"><div class="topic"> Frontend</div><div class='description'>Presentasjonen - på gata</div></li>
+<li class="Basics"><div class="topic"> Backend</div><div class='description'>Der dataene bor - på kjøkkenet</div></li>
+<li class="Basics"><div class="topic"> Fagsystem</div><div class='description'>Laget for et helt spesifikt domene</div></li>
+<li class="Basics"><div class="topic"> CMS</div><div class='description'>Content management system</div></li>
+<li class="Basics"><div class="topic"> Cookies</div><div class='description'>Kølapp. Noe klienten holder på fordi servern gav det til han</div></li>
+<li class="Basics"><div class="topic"> Internett</div><div class='description'>"Information superhighway"</div></li>
+<li class="Basics"><div class="topic"> Autentisering / Sikkerhet</div><div class='description'></div></li>
+<li class="BONUS"><div class="topic"> Autowired instansvariabel i en sessionscopet bønne i spring</div><div class='description'>"If it looks like a geek, talks like a geek, and work likes a geek - it probably is a geek"</div></li>
+<li class="Drifting"><div class="topic"> Devops</div><div class='description'>Drift som en del av utviklingen</div></li>
+<li class="Drifting"><div class="topic"> Forvaltning</div><div class='description'>Når et system som bare skal vedlikeholdes</div></li>
+<li class="Drifting"><div class="topic"> Drift</div><div class='description'>De som kjører programmet vi har laget</div></li>
+<li class="Drifting"><div class="topic"> Ekstern vs intern drift</div><div class='description'>Evry vs BEKK helpdesk</div></li>
+<li class="Drifting"><div class="topic"> Testmiljø</div><div class='description'></div></li>
+<li class="Drifting"><div class="topic"> Prodmiljø</div><div class='description'></div></li>
+<li class="Drifting"><div class="topic"> QAmiljø</div><div class='description'></div></li>
+<li class="Oppstart"><div class="topic"> Kravspekk</div><div class='description'>Et dokument som skal inneholde sannheten</div></li>
+<li class="Oppstart"><div class="topic"> Estimat</div><div class='description'>Vill gjetting</div></li>
+<li class="Oppstart"><div class="topic"> Kompleksitet (i estimering)</div><div class='description'>Hvor m</div></li>
+<li class="Oppstart"><div class="topic"> Systemmålbilde</div><div class='description'></div></li>
+<li class="Prosess"><div class="topic"> Systemarkitekt</div><div class='description'></div></li>
+<li class="Prosess"><div class="topic"> Virksomhetsarkitekt</div><div class='description'></div></li>
+<li class="Prosess"><div class="topic"> Tjenestearkitekt</div><div class='description'></div></li>
+<li class="Prosess"><div class="topic"> Kode</div><div class='description'></div></li>
+<li class="Prosess"><div class="topic"> Scrum</div><div class='description'></div></li>
+<li class="Prosess"><div class="topic"> Kanban</div><div class='description'></div></li>
+<li class="Testing"><div class="topic"> Akseptansetest</div><div class='description'></div></li>
+<li class="Testing"><div class="topic"> Systemtest</div><div class='description'></div></li>
+<li class="Testing"><div class="topic"> Integrasjonstest</div><div class='description'></div></li>
+<li class="Testing"><div class="topic"> Regresjonstest</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> API</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> GIT / GITHUB</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> Bibliotek</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> Rammeverk</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> Release</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> Deploy</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> Kontinuerlig deploy</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> Javascript</div><div class='description'>java to javascript is like car to carpet</div></li>
+<li class="Utvikling"><div class="topic"> Html</div><div class='description'></div></li>
+<li class="Utvikling"><div class="topic"> Css</div><div class='description'></div></li><ul>
+    </div>
 
     <script type="text/javascript">
         
@@ -157,7 +130,21 @@
           $('#heading').hide()
                       .html($(this).html())
                       .fadeIn("slow");  
+          });
 
+          $('#data li').each(function(index){
+            
+            
+            var category = $(this).attr('class');
+            var categoryEL = $('#categories section.'+category)
+
+            if(categoryEL.length == 0){
+              console.log("Oppretter " +category); 
+              var html = "<section class="+category+"><h3>"+category+"</h3><ul></ul></section>";
+              categoryEL = $('#categories').append(html);
+            }  
+
+            $('#categories section.'+category+' ul').append(this);              
         });
       });
 
