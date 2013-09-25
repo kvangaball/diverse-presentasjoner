@@ -16,6 +16,7 @@
     }
     section.heading, section.categories{
       width: 100%;
+      height: 280px;
       display: inline-block;
     }
 
@@ -44,7 +45,7 @@
     }
     #heading .description{
       text-align:center;
-      font-size: 2em;
+      font-size: 1.8em;
     }
 
     #data{
@@ -55,12 +56,12 @@
   </head>
   <body>
 
-   <section id="categories">
-   </section> 
-
    <section class="heading">
     <div id="heading"></div>
    </section>
+
+   <section id="categories">
+   </section> 
 
 
    <div id="data"> 
@@ -114,17 +115,20 @@
       $(document).ready(function() {
         $('li').click(function(){
           if($(this).hasClass('selected')){
-            $('h1').html("");  
-          }
+            $(this).toggleClass('selected');
+            $('#heading').fadeOut().html("");  
+          } else {
+
 
           $('.selected').toggleClass('selected');
           $(this).toggleClass('selected');
           $('#heading').hide()
                       .html($(this).html())
                       .fadeIn("slow");  
-          });
+          }
+        });
 
-          $('#data li').each(function(index){
+        $('#data li').each(function(index){
             
             
             var category = $(this).attr('class');
