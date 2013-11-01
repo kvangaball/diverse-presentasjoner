@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto);
+    
+    li,div{box-sizing: border-box;}
+    
+    body{
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #categories section{
+      float: left;
+      padding: 0 15px 0 15px; 
+      width: 14%;
+    }
+    section.heading, section.categories{
+      width: 100%;
+      display: inline-block;
+    }
+
+    section.heading{
+      height: 280px;
+    }
+
+    li{
+      list-style-type: none;
+      margin: 2px 5px 2px 5px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      border-color: white; 
+    }
+    li .description{
+      display: none;
+    }
+    ul{
+      padding: 0px;
+    }
+
+    li.selected{
+      font-weight: bold;
+      border-color: green;
+      color: green;
+    }
+    #heading .topic{
+      text-align:center;
+      font-size: 5em;
+    }
+    #heading .description{
+      text-align:center;
+      font-size: 1.8em;
+    }
+
+    #data{
+      display: none;
+    }
+
+    </style>
+  </head>
+  <body>
+
+   <section class="heading">
+    <div id="heading"></div>
+   </section>
+
+   <section id="categories">
+   </section> 
+
+
+   <div id="data"> 
+      <ul>
+<li class="Arkitektur"><div class="topic"> Stack</div><div class='description'>Hvem skal levere byggeklossene? Har man samme stack er det noen ganger enklere å få de til å funke sammen.</div></li>
+<li class="Drift"><div class="topic"> Cloud</div><div class='description'>Software, platform, infrastruktur, eller en datamaskin? Du kan leie den på internett. Betal for bruk.</div></li>
+<li class="Drift"><div class="topic"> Hosting</div><div class='description'>Skal applikasjonen kjøres hos helpdesk eller hos Evry?</div></li>
+<li class="Arkitektur"><div class="topic"> App/Web/Hybrid</div><div class='description'>funker bare på apple vs funker på internett vs litt av begge</div></li>
+<li class="Arkitektur"><div class="topic"> Tjenesteorientering</div><div class='description'>Når man skiller forskjellige data og operasjoner fra hverandre, og knytter de sammen der det trengs</div></li>
+<li class="Arkitektur"><div class="topic"> Arkitektur</div><div class='description'>Et system en sammenknyting av forskjellige kodesnutter. Arkitektur er en overordnet uttrykk på hvordan de er knyttet sammen.</div></li>
+<li class="Arkitektur"><div class="topic"> Integrasjon</div><div class='description'>Når systemet ditt skal snakke med et annet</div></li>
+<li class="Arkitektur"><div class="topic"> Off-the-shelf vs. skreddersøm</div><div class='description'>Kjøpe standard og tilpasse dette eller lag noe selv som funker akkurat slik du ønsker</div></li>
+<li class="Basics"><div class="topic"> Server</div><div class='description'>Datamaskin som du har kontroll over, og hvor du bestemmer hva som skjer.</div></li>
+<li class="Basics"><div class="topic"> Klient</div><div class='description'>Datamaskin som du ikke har kontroll over, men som likevel er en del av systemet.</div></li>
+<li class="Basics"><div class="topic"> Frontend</div><div class='description'>Presentasjon av data</div></li>
+<li class="Basics"><div class="topic"> Backend</div><div class='description'>Behandling av data</div></li>
+<li class="Basics"><div class="topic"> Fagsystem</div><div class='description'>Et system som er spesifikt laget for en type forretningsoppgaver</div></li>
+<li class="Basics"><div class="topic"> CMS</div><div class='description'>System som tilbyr lagring, organisering og presentasjon av innhold</div></li>
+<li class="Basics"><div class="topic"> Cookies</div><div class='description'>Litt data som en nettleser tar vare på, og som både server og klient kan lese og skrive</div></li>
+<li class="Basics"><div class="topic"> Internett</div><div class='description'>The Information superhighway</div></li>
+<li class="Basics"><div class="topic"> Autentisering</div><div class='description'>Hvem er du? Hva har du lov til å gjøre?</div></li>
+<li class="Basics"><div class="topic"> Sikkerhet</div><div class='description'>Hvordan unngå at noen bruker systemet ditt på en heeelt annen måte enn du tenkte</div></li>
+<li class="Basics"><div class="topic"> System</div><div class='description'>Et dataprogram.</div></li>
+<li class="Bonus"><div class="topic"> Sosiale medier</div><div class='description'>Veldig enkel publisering av informasjon til hele verden</div></li>
+<li class="Drift"><div class="topic"> Devops</div><div class='description'>Når man ser på drift og utrulling som integrert en del av utviklingen</div></li>
+<li class="Drift"><div class="topic"> Forvaltning</div><div class='description'>Når et system bare skal vedlikeholdes. Det som kommer etter at man har blåst budsjettet på nyutvikling.</div></li>
+<li class="Drift"><div class="topic"> Drift</div><div class='description'>Kjøring av systemet - sikre at det er tilgjengelig</div></li>
+<li class="Drift"><div class="topic"> Ekstern/intern drift</div><div class='description'>Evry vs BEKK helpdesk</div></li>
+<li class="Drift"><div class="topic"> Miljø</div><div class='description'>Utvikling, test, QA, Prod. Likt, men forskjellig.</div></li>
+<li class="Prosess"><div class="topic"> Kravspekk</div><div class='description'>Et dokument som skal inneholde sannheten</div></li>
+<li class="Prosess"><div class="topic"> Estimat</div><div class='description'>Vill gjetting som alt for ofte ender opp i bare ett tall</div></li>
+<li class="Prosess"><div class="topic"> Kompleksitet</div><div class='description'>Hvor mye forskjellig må gjøres/hvor vanskelig er det</div></li>
+<li class="Prosess"><div class="topic"> Systemmålbilde</div><div class='description'>Systemets anatomi på et meget overordnet nivå</div></li>
+<li class="Prosess"><div class="topic"> Arkitekt</div><div class='description'>Virksomhet, System, Tjeneste, etc. Liker å bestemme hvordan systemet skal se ut under panseret.</div></li>
+<li class="Basics"><div class="topic"> Kode</div><div class='description'>En versjon av sannheten; tolket av en utvikler og lest opp av en datamaskin.</div></li>
+<li class="Prosess"><div class="topic"> Scrum</div><div class='description'>En måte å organisere arbeidet på. Med tidsboks (sprint).</div></li>
+<li class="Prosess"><div class="topic"> Kanban</div><div class='description'>En annen måte å organsiere arbeidet på. Uten tidsboks(sprint).</div></li>
+<li class="Prosess"><div class="topic"> Test</div><div class='description'>System, regresjon, enhet, akseptanse. Forskjellige formål. Forskjellige faser. Alle avdekker bugs. Kan fungere som sikkerhetsnett</div></li>
+<li class="Utvikling"><div class="topic"> API</div><div class='description'>Et systemspesifikt språk som man kan brukes til integrasjon</div></li>
+<li class="Utvikling"><div class="topic"> Versjonskontroll</div><div class='description'>Git, Svn, Github. Versjonskontroll av tekst. Lagrer alt, også historikken.</div></li>
+<li class="Utvikling"><div class="topic"> Bibliotek</div><div class='description'>Pakke med funksjonalitet som kan puttes inn i et system</div></li>
+<li class="Utvikling"><div class="topic"> Rammeverk</div><div class='description'>Skjelett for et system. Legger til rette for utviklingen, men innebærer alltid kompromisser.</div></li>
+<li class="Prosess"><div class="topic"> Release</div><div class='description'>En varierende mengde funksjonalitet som gjøres tilgjengelig for sluttbrukere</div></li>
+<li class="Utvikling"><div class="topic"> Deploy</div><div class='description'>Kopier fil til en datamaskin og trykk på "kjør". Gjøres i et miljø, og bør gjøres ofte!</div></li>
+<li class="Utvikling"><div class="topic"> Javascript</div><div class='description'>java to javascript is like car to carpet. Kode som kjører i nettleseren din.</div></li>
+<li class="Utvikling"><div class="topic"> Html</div><div class='description'>Tekstformat som nettleseren er veldig bra til å tolke og presentere</div></li>
+<li class="Utvikling"><div class="topic"> Css</div><div class='description'>Størrelse, farger og annet jåleri som nettleseren bruker for å gjøre html vakkert</div></li>
+<li class="Bonus"><div class="topic"> Autowired instansvariabel i en sessionscopet bønne i spring</div><div class='description'>Dødsenkelt. Så lenge du er sertifisert i Spring.</div></li>
+      </ul>  
+    </div>
+
+    <script type="text/javascript">
+        
+      $(document).ready(function() {
+        $('li').click(function(){
+          if($(this).hasClass('selected')){
+            $(this).toggleClass('selected');
+            $('#heading').fadeOut()
+                        .html("");  
+          } else {
+            $('.selected').toggleClass('selected');
+            $(this).toggleClass('selected');
+            $('#heading').hide()
+                        .html($(this).html())
+                        .fadeIn("slow");  
+          }
+        });
+
+        $('#data li').each(function(index){
+            
+            
+            var category = $(this).attr('class');
+            var categoryEL = $('#categories section.'+category)
+
+            if(categoryEL.length == 0){
+              console.log("Oppretter " +category); 
+              var html = "<section class="+category+"><h3>"+category+"</h3><ul></ul></section>";
+              categoryEL = $('#categories').append(html);
+            }  
+
+            $('#categories section.'+category+' ul').append(this);              
+        });
+      });
+
+    </script>  
+  </body>
+</html>
