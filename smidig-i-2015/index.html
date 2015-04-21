@@ -11,6 +11,103 @@
     <h1>Moderne Smidig</h1>
     <h4>Hvordan var Smidig i gamle dager?</h4>
     <h4>Hva er Smidig nå? Er bevegelsen død?</h4>
+
+
+    februar 2001 - 14 år siden
+
+    historie:
+
+    de har forandret verden
+    grasrot -> stor industri
+    den nye "standarden"
+
+
+    yeah!
+
+    folk jobber forskjellig
+    dokumentasjon
+    samlokalisering og møter
+    bra verktøy: tdd, ci, standups, osv
+    kommunikasjon
+    færre gigafiaskoer
+
+    fail!
+
+    fossefall med smidige klær
+    UTROLIG mye dårlig prosess
+    kontrakter?
+    budsjetter?
+    metode >> prosessen
+    måling??
+    kjørende kode som mål på fremdrift?
+
+    hva skjer nå?
+
+    smidig betyr alt mulig
+    = smidig er dødt
+    guruene sitter fortsatt fast i 2005
+    mye mye penger i coaching
+
+
+    nye buzzwords
+
+    devops
+    lean startup
+
+
+
+
+
+
+
+
+
+
+    lønn
+        fastlønn
+        bonus
+        rekrutteringsbonus
+    ytelser
+        forsikring
+        pensjon
+        mobil
+        bredbånd
+        gadget
+    fagmiljø
+        faggrupper
+        enheter
+        konferanser
+        kurs
+        socialcast
+    prosjekter
+        teamet
+        nettverk
+        innflytelse
+        oppgaven
+        teknologi
+    sosialt
+        fredagspils
+        sommerfest
+        julebord
+        idrett
+        fond
+    karriere
+        fagleder
+        fagsjef
+        verv
+    annet
+        socialcast
+        bootcamps
+        manager
+        anderkjennelse
+        synlighet
+        inflytelse
+        faktureringsmål
+
+
+
+
+
 </section>
 
 <section>
@@ -61,7 +158,7 @@
 
     <h1>I dag</h1>
     <ul>
-        <li>Praksisene er "absorbert"</li>
+        <li>Praksisene er i stor grad "absorbert"</li>
         <li>Metodene er... ikke så hot lengre</li>
         <li>Nye buzzwords</li>
         <li>Mindre teoretisering</li>
@@ -71,9 +168,62 @@
 
 <section>
     <h1>Smidig i dag heter ikke Smidig</h1>
-    <ul></ul>
+</section>
+
+<section>
+    <h2>Continous delivery</h2>
+</section>
+
+<section>
+    <h2>Lean startup</h2>
 </section>
 
 
 </body>
+
+<script>
+
+    function snuRecursive(current, prev){
+        console.log(current.name);
+        var next = current.next;
+        current.next = prev;
+        if(next){
+            return snuRecursive(next, current);
+        } else {
+            return current;
+        }
+    }
+
+    function snuLoop(start){
+        var curr = start;
+        var prev;
+        while(curr.next){
+            console.log(curr.name);
+            var nex = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = nex;
+        }
+
+        curr.next = prev;
+
+        return nex;
+
+    }
+
+    function Ye(name, neste){
+        this.name = name;
+        this.next = neste;
+    }
+
+    f = new Ye('f');
+    e = new Ye('e', f);
+    d = new Ye('d', e);
+    c = new Ye('c', d);
+    b = new Ye('b', c);
+    a = new Ye('a', b);
+
+
+</script>
+
 </html>
