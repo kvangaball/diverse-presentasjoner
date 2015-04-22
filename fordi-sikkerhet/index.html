@@ -97,13 +97,14 @@
 		<script src="lib/js/angular.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
 		<script src="lib/js/reveal.min.js"></script>
+		<script src="lib/js/lodash.min.js"></script>
 
         <script type="text/javascript">
 
             var app = angular.module('fordiSikkerhet', []);
 
             app.controller('Ctrl', function(){
-                this.rants = rants;
+                this.rants = _.filter(rants, function(r){return !r.ignore});
                 this.isArray = angular.isArray;
             });
 

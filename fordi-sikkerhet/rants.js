@@ -14,13 +14,19 @@ var kategori = {
         id: "Beskyttelse",
         forklaring: "Beskytte ting og tang mot folk som ikke har tilgang, eller som ønsker å gjøre ting som er farlig eller skadelig",
         farge: "#483C32",
-        pri: 3
+        pri: 4
     },
     internett: {
         id: "Internett er vanskelig",
         forklaring: "Fordi hele verden er der, så er internett ekstra vanskelig",
         farge: "#191970",
-        pri: 4
+        pri: 5
+    },
+    flyogslikt: {
+        id: "Fly er spesielt",
+        forklaring: "Fly flyr og derfor er det forskjellig fra buss",
+        farge: "#8c00e1",
+        pri: 2
     }
 }
 
@@ -44,8 +50,8 @@ var rants = [
         navn: "2 - faktor autentisering",
         kategori: kategori.identitet,
         rant: "Yikes. Noen har hacka gmailen og facebooken min",
-        problem: "Brukernavn/Passord er ikke så veldig sikkert",
-        losning: "Brukernavn, Passord + ENGANGSPASSORD",
+        problem: "Brukernavn + Passord er en ganske så svak sikkerhetsmekanisme",
+        losning: "Brukernavn + Passord + ENGANGSPASSORD",
         issues: [
         "Du må alltid kunne få tak et nytt engangspassord",
         "Distribusjon av engangspassord er komplisert",
@@ -54,6 +60,7 @@ var rants = [
         terningkast: 6
     },
     {
+        ignore: true,
         navn: "BankId - Dongle",
         kategori: kategori.identitet,
         rant: "AAAAAArgh, jeg må inn i nettbanken for å overføre penger, og har glemt BankID-greia mi",
@@ -75,6 +82,7 @@ var rants = [
         terningkast: 4
     },
     {
+        ignore: true,
         navn: "Password-Manager",
         kategori: kategori.identitet,
         rant: "Jeg blir GAAAAL av å lage sykt bra passord alltid",
@@ -95,14 +103,9 @@ var rants = [
         bottomline: "Veldig hendig. Og kan være veldig bra sikkerhetsmessig. Forutsatt at  3.parten gjør jobben sin, og at man bruker 2-faktor auth",
         terningkast: 5
     },
-
-
-
-
-
     {
         navn: "SSL/TLS",
-        rant: "Hvor er hengelåsen?",
+        rant: "Hva betyr den derre hengelåsen??",
         kategori: kategori.kommunikasjon,
         problem: "Det er i utangspunktet veeeldig enkelt å avlytte og tukle med kommunikasjon på Internett",
         losning: "Lag KRYPTO-magi som kan brukes av praktisk talt all kommunikasjon på internett. Pålitelige 3.parter og masse røverspråk",
@@ -111,6 +114,7 @@ var rants = [
         terningkast: [6, 6]
     },
     {
+        ignore: true,
         navn: "VPN",
         rant: "Jeg får ikke tilgang til $common når jeg sitter hjemme",
         kategori: kategori.kommunikasjon,
@@ -122,11 +126,14 @@ var rants = [
     },
     {
         navn: "WiFi",
-        rant: "Det WiFi-passordet er så sykt vanskelig",
+        rant: "WiFi-passordet er sykt vanskelig",
         kategori: kategori.kommunikasjon,
         problem: "Du vil gjerne kunne bruke trådløst nettverk uten at alle kan avlytte det",
-        losning: "Krypto-magi på all trådløs kommunikasjon med et hemmelig men delt passord",
-        issues: ["Passordet må være langt for å være ordentlig bra", "Kan hackes likevel avhengig av protokoll (WEP)"],
+        losning: "Krypto-magi på all trådløs kommunikasjon med et delt passord",
+        issues: [
+        "Passordet må være langt for å være ordentlig bra", 
+        "Kan hackes likevel avhengig av protokoll (WEP)", 
+        "Det deles ved hjelp av en lapp"],
         bottomline: "Til og med et dårlig passord på WiFi gir betydelig økt sikkerhet",
         terningkast: 5
     },
@@ -146,15 +153,11 @@ var rants = [
             "Java blir ikke oppdatert jevnlig",
             "Java installerer Ask-toolbar når det blir oppdatert...."
         ],
-        bottomline: "I 2004 var det fett. Men nå er 2014.",
+        bottomline: "I 2004 var det fett. Men nå er 2015.",
         terningkast: 1
     },
-
-
-
-
-
    {
+        ignore: true,
         navn: "SPAM-filter",
         rant: "Hvorfor kommer ikke den helsikes mailen frem",
         kategori: kategori.internett,
@@ -163,7 +166,7 @@ var rants = [
         issues: [
             "Det er vanskelig å vite hva du ikke vil ha",
             "Spammere blir flinkere og flinkere til å jukse seg forbi filterne",
-            "Våpenkappløp",
+            "Våpenkappløp mellom SPAM-filterene og Spammerne",
             "Kommer ikke spam-en din gjennom? Send mer spam!"
             ],
         bottomline: "Gmail får aldri spam.. Så det går an. Men internett lider.",
@@ -171,10 +174,10 @@ var rants = [
     },
     {
         navn: "Captcha",
-        rant: "Jeg klarer ikke logge in på LinkedIn fordi de har en ubrukelig Captcha",
+        rant: "Det finnes så utrolig mange falske profiler på Twitter",
         kategori: kategori.internett,
-        problem: "Noen synes det er gøy å automatisk legge inn kommentarer på internettforum (og andre steder)",
-        losning: "Mennesker er sykt bra på å gjenkjenne mønster, så vi bruker et bilde",
+        problem: "Noen synes det er gøy å automatisk legge inn falske brukere på internett (og andre steder)",
+        losning: "Mennesker er bra på å gjenkjenne mønster, så vi bruker et bilde og får bruker til å si hva det inneholder",
         issues: [
         "Datamaskiner blir kjappere og kjappere",
         "Mennesker kan leies for en billig penge",
@@ -186,8 +189,8 @@ var rants = [
     },
     {
         navn: "Filtrerende Web-Proxy",
-        rant: "Jeg klikka på en link på Socialcast og så står det bare [Blocked by proxy: Social media]",
-        problem: "Våre ansatte surfer bare på porno",
+        rant: "Jeg klikka på en link på twitter og så står det bare [Blocked by proxy: Social media]",
+        problem: "Våre ansatte surfer mye på sider som har XXX i navnet",
         kategori: kategori.internett,
         losning: "Send all internettrafikk gjennom en mellomtjener som kan luke vekk alt som er farlig, uønsket, uproduktivt eller smakløst",
         issues: ["Falske positiver", "Kan fort misbrukes av overivrige administratorer", "Personvernmessig litt betenkelig"],
@@ -202,21 +205,23 @@ var rants = [
         losning: "La spesial-software eller hardware kontrollere all nettverkstrafikk",
         issues: [
             "Noen brannmurer stopper litt i overkant mye",
-            "Bra muligheter for misbruk om man har brannmurer på sentraliserte steder"
+            "Gode muligheter for galskap om man har brannmurer på sentraliserte steder",
+            "Gode muligheter for galskap om feil fyr administrerer brannmureren"
         ],
         bottomline: "Om den står på en fornuftig plass, gir en brannmur bra beskyttelse mot mye rart. Og du merker ikke at den er der",
         terningkast: 5
     },
-
-
-
     {
         navn: "Virtuell desktop",
         rant: "Hvorfor føles det som om jeg jobber med sirup på tastaturet???",
         kategori: kategori.beskyttelse,
         problem: "Du skal kunne bruke PCen fra hvor som helst, f.eks en tynn og billig pc. Og det skal samtidig være supersikkert.",
         losning: "Lag en Supersikker virtuell PC som du kan logge på og fjernstyre fra _nesten_ hvor som helst",
-        issues: ["Vil så og si alltid oppleves som tregere enn en vanlig PC", "Blir ikke bedre enn nettverket det brukes over", "IT-avdelinger liker å låse ned ting", "Kommer nesten alltid i tillegg til en PC"],
+        issues: [
+        "Vil så og si alltid oppleves som tregere enn en vanlig PC", 
+        "Blir ikke bedre enn nettverket det brukes over", 
+        "IT-avdelinger liker å låse ned ting", 
+        "Kommer nesten alltid i tillegg til en PC"],
         bottomline: "Til sitt bruk. Men brukes ofte til helt andre ting.",
         terningkast: [2, 5]
     },
@@ -239,8 +244,8 @@ var rants = [
         navn: "Auto-oppdatering",
         rant: "Aaargh. Det passer ikke å oppdatere JAVA akkurat nå.",
         kategori: kategori.beskyttelse,
-        problem: "All programvare har sikkerhetsproblemer som oppdages etter første release",
-        losning: "Programmer oppdaterer seg selv, slik at sikkerhetsproblemer enkelt kan fikses",
+        problem: "All programvare har sikkerhetsproblemer som oppdages etter release",
+        losning: "Bygg inn oppdatering i softwaren, slik at feilfikser enkelt kan rulles ut",
         issues: [
             "Må gjøres enkelt nok til at det blir gjort, og helst fullautomatisk",
             "Kan ikke alltid gjøres _helt_ i bakgrunnen (restart nå?? *stønn*)",
@@ -250,7 +255,7 @@ var rants = [
     },
     {
         navn: "Admin-konto",
-        rant: "Helsike. Jeg får ikke installert Spotify på #kundepc.",
+        rant: "Helsike. Jeg får ikke installert Spotify på kontorpcen",
         kategori: kategori.beskyttelse,
         problem: "At ting blir installert uten at man legger merke til det",
         losning: "Du må ha Administrator-rettigheter på din bruker for å få innstallere programmer (og evt gjøre andre potensielt skadelige ting)",
@@ -275,6 +280,28 @@ var rants = [
         bottomline: "Et bra kompromiss mellom årntli admin-konto og å kjøre alt med alle rettigheter",
         terningkast: 5
     },
+    {
+        navn: "Væskeforbudet",
+        rant: "Vann koster 70 kr på Gardermoen!!!",
+        kategori: kategori.flyogslikt,
+        problem: "Noen putta en gang ei bombe i ei colaflaske",
+        losning: "Forby all væske gjennom sikkerhetskontroll",
+        issues: [
+            "Shampo", "Barnemat", "MME", "Deodorant", "Vin"
+        ],
+        bottomline: "Sikkerhetsteater av beste sort. Koster enormt mye.",
+        terningkast: 1
+    },
+    {
+        navn: "Mobil og slikt i fly",
+        rant: "Hvorfor i herrens navn må jeg skru av kindlen under takeoff???",
+        kategori: kategori.flyogslikt,
+        problem: "Fly har mye sensitiv elektronikk som kan bli påvirket av radiosendere",
+        losning: "Forby alle radiosendere som ikke er godkjent",
+        issues: ["Veldig få husker å skru av mobilen sin"],
+        bottomline: "Sikkerhetsregel som blir glatt ignorert. Jobbe med herding i stedet?",
+        terningkast: 1
+    }
 ];
 
 /*
